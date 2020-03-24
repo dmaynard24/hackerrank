@@ -33,8 +33,6 @@
 
 // John can match three pairs of socks.
 
-// Complete the sockMerchant function below.
-
 function sockMerchant(n, ar) {
   let pairCount = 0;
   const colors = new Map();
