@@ -41,7 +41,7 @@ function equalizeArray(arr) {
     const val = arr[i];
     if (cachedCounts.has(val)) {
       cachedCounts.set(val, cachedCounts.get(val) + 1);
-      cachedCount = cachedCounts.get(val);
+      const cachedCount = cachedCounts.get(val);
       if (cachedCount > largestCount) {
         largestCount = cachedCount;
       }
