@@ -1,4 +1,4 @@
-// 2D Array
+// Hourglass Sum
 
 // Given a 6 x 6 2D Array, arr:
 

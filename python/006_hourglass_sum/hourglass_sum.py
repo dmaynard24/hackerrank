@@ -1,4 +1,4 @@
-# 2D Array
+# Hourglass Sum
 
 # Given a 6 x 6 2D Array, arr:
 
@@ -41,9 +41,9 @@
 
 # Function Description
 
-# Complete the function hourglassSum in the editor below. It should return an integer, the maximum hourglass sum in the array.
+# Complete the function hourglass_sum in the editor below. It should return an integer, the maximum hourglass sum in the array.
 
-# hourglassSum has the following parameter(s):
+# hourglass_sum has the following parameter(s):
 # arr: an array of integers
 
 # Input Format
