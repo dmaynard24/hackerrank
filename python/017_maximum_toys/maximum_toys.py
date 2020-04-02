@@ -1,4 +1,4 @@
-def maximumToys(prices, k):
+def maximum_toys(prices, k):
   prices.sort()
 
   count = 0
@@ -9,4 +9,4 @@ def maximumToys(prices, k):
   return count
 
 
-print(maximumToys([1, 12, 5, 111, 200, 1000, 10], 50))
+print(maximum_toys([1, 12, 5, 111, 200, 1000, 10], 50))  # 4

@@ -1,4 +1,4 @@
-def countSwaps(a):
+def count_swaps(a):
   count = 0
 
   def swap(left, right):
@@ -23,6 +23,6 @@ def countSwaps(a):
   return count
 
 
-countSwaps([6, 4, 1])
-countSwaps([1, 2, 3])
-countSwaps([3, 2, 1])
+count_swaps([6, 4, 1])
+count_swaps([1, 2, 3])
+count_swaps([3, 2, 1])
