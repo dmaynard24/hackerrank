@@ -1,38 +1,35 @@
 def activityNotifications(expenditure, d):
-  def insert_sorted(arr, val, left, right):
-    if len(arr) == 0:
-      arr.append(val)
-    else:
-      if left < right - 1:
-        middle = (left + right) // 2
-        if arr[middle] <= val:
-          insert_sorted(arr, val, middle, right)
-        else:
-          insert_sorted(arr, val, left, middle)
-      else:
-        if arr[right] < val:
-          arr.insert(right + 1, val)
-        else:
-          arr.insert(right, val)
-
   count = 0
+  count_arr = [0] * 201
 
-  is_even_d = d % 2 == 0
-  prev_sorted = []
-  for i in range(0, len(expenditure)):
-    val = expenditure[i]
-    if i >= d:
-      if is_even_d:
-        median = (prev_sorted[d // 2 - 1] + prev_sorted[d // 2]) / 2
-      else:
-        median = prev_sorted[d // 2]
-      if val >= 2 * median:
-        count += 1
-      # print(prev_sorted, median, val)
-      prev_sorted.pop(0)
-    insert_sorted(prev_sorted, val, 0, len(prev_sorted) - 1)
+  for i in range(0, d):
+    count_arr[expenditure[i]] += 1
+
+  for i in range(d, len(expenditure)):
+    if expenditure[i] >= getMedianVal(count_arr, d) * 2:
+      count += 1
+    count_arr[expenditure[i - d]] -= 1
+    count_arr[expenditure[i]] += 1
 
   return count
+
+
+def getMedianVal(count_arr, d):
+  is_even_len = d % 2 == 0
+  total_count = 0
+
+  for i, count in enumerate(count_arr):
+    total_count += count
+    if is_even_len:
+      if total_count == d // 2:
+        for j in range(i + 1, len(count_arr)):
+          if count_arr[j] > 0:
+            return (i + j) / 2
+      elif total_count > d // 2:
+        return i
+    else:
+      if total_count >= d // 2 + 1:
+        return i
 
 
 print(activityNotifications([2, 3, 4, 2, 3, 6, 8, 4, 5], 5))  # 2
