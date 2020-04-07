@@ -1,4 +1,4 @@
-def activityNotifications(expenditure, d):
+def activity_notifications(expenditure, d):
   count = 0
   count_arr = [0] * 201
 
@@ -6,7 +6,7 @@ def activityNotifications(expenditure, d):
     count_arr[expenditure[i]] += 1
 
   for i in range(d, len(expenditure)):
-    if expenditure[i] >= getMedianVal(count_arr, d) * 2:
+    if expenditure[i] >= get_median_val(count_arr, d) * 2:
       count += 1
     count_arr[expenditure[i - d]] -= 1
     count_arr[expenditure[i]] += 1
@@ -14,7 +14,7 @@ def activityNotifications(expenditure, d):
   return count
 
 
-def getMedianVal(count_arr, d):
+def get_median_val(count_arr, d):
   is_even_len = d % 2 == 0
   total_count = 0
 
@@ -32,6 +32,6 @@ def getMedianVal(count_arr, d):
         return i
 
 
-print(activityNotifications([2, 3, 4, 2, 3, 6, 8, 4, 5], 5))  # 2
-print(activityNotifications([1, 2, 3, 4, 4], 4))  # 0
-print(activityNotifications([10, 20, 30, 40, 50], 3))  # 1
+print(activity_notifications([2, 3, 4, 2, 3, 6, 8, 4, 5], 5))  # 2
+print(activity_notifications([1, 2, 3, 4, 4], 4))  # 0
+print(activity_notifications([10, 20, 30, 40, 50], 3))  # 1
