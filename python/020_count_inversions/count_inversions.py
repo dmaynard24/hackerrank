@@ -1,13 +1,6 @@
 def countInversions(arr):
   count = 0
 
-  def swap(left, right):
-    temp = arr[left]
-    arr[left] = arr[right]
-    arr[right] = temp
-    nonlocal count
-    count += 1
-
   def merge_halves(left, middle, right):
     left_start = left
     right_start = middle + 1
@@ -16,9 +9,9 @@ def countInversions(arr):
       if arr[left_start] <= arr[right_start]:
         left_start += 1
       else:
-        swap(left_start, right_start)
-        print('SWAP', arr)
         right_start += 1
+
+    # create temp and reconstruct here, counting inversions beforehand
 
   def mergesort(left, right):
     if left < right:
@@ -34,3 +27,4 @@ def countInversions(arr):
 
 # print(countInversions([1, 1, 1, 2, 2]))  # 0
 print(countInversions([2, 1, 3, 1, 2]))  # 4
+# print(countInversions([7, 5, 3, 1])) # 6
