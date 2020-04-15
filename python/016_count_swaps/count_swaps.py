@@ -1,21 +1,20 @@
 def count_swaps(a):
-  count = 0
-
   def swap(left, right):
     temp = a[left]
     a[left] = a[right]
     a[right] = temp
-    nonlocal count
-    count += 1
 
   def bubblesort():
+    count = 0
     for _ in range(len(a)):
       for j in range(len(a) - 1):
         if a[j] > a[j + 1]:
           # swap elements if they are in decreasing order
           swap(j, j + 1)
+          count += 1
+    return count
 
-  bubblesort()
+  count = bubblesort()
 
   print(str.format('Array is sorted in {} swaps.', count))
   print(str.format('First Element: {}', a[0]))
