@@ -38,7 +38,7 @@ def countInversions(arr):
   return mergesort(0, len(arr) - 1)
 
 
-# print(countInversions([1, 1, 1, 2, 2]))  # 0
-# print(countInversions([2, 1, 3, 1, 2]))  # 4
-# print(countInversions([7, 5, 3, 1]))  # 6
-# print(countInversions([3, 2, 1]))  # 3
+print(countInversions([1, 1, 1, 2, 2]))  # 0
+print(countInversions([2, 1, 3, 1, 2]))  # 4
+print(countInversions([7, 5, 3, 1]))  # 6
+print(countInversions([3, 2, 1]))  # 3
