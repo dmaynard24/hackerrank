@@ -4,7 +4,7 @@ def substrCount(n, s):
   def is_substr_special_palindrome(left, right):
     same_char = s[left]
     while left < right:
-      if s[left] != s[right] or s[left] != same_char or s[right] != same_char:
+      if s[left] != same_char or s[right] != same_char:
         return False
       left += 1
       right -= 1
