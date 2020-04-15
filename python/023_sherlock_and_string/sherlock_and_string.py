@@ -5,7 +5,7 @@ def isValid(s):
   s_char_counts = {}
   for s_char_count in s_chars.values():
     s_char_counts[s_char_count] = s_char_counts.get(s_char_count, 0) + 1
-  if len(s_char_counts) == 0 or len(s_char_counts) == 1:
+  if len(s_char_counts) < 2:
     return 'YES'
   if len(s_char_counts) > 2:
     return 'NO'
