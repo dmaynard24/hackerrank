@@ -18,9 +18,9 @@
 
 # Function Description
 
-# Complete the function compareTriplets in the editor below. It must return an array of two integers, the first being Alice's score and the second being Bob's.
+# Complete the function compare_triplets in the editor below. It must return an array of two integers, the first being Alice's score and the second being Bob's.
 
-# compareTriplets has the following parameter(s):
+# compare_triplets has the following parameter(s):
 
 # a: an array of integers representing Alice's challenge rating
 # b: an array of integers representing Bob's challenge rating
