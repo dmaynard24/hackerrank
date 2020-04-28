@@ -13,6 +13,7 @@
 # n: the integer length of array ar
 # ar: an array of integers
 # k: the integer to divide the pair sum by
+
 # Input Format
 
 # The first line contains 2 space-separated integers, n and k.
