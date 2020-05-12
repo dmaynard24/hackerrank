@@ -4,6 +4,6 @@ def chocolate_feast(n, c, m):
   count = bars
   while wrappers >= m:
     bars = wrappers // m
-    wrappers = (wrappers % m) + bars
+    wrappers = wrappers % m + bars
     count += bars
   return count
