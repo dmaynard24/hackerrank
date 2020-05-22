@@ -48,25 +48,3 @@ def alternate(s):
   get_alternate_len(s)
 
   return max_len[0]
-
-
-# print(alternate('asdcbsdcagfsdbgdfanfghbsfdab'))  # 8
-
-
-def caesarCipher(s, k):
-  encoded = ''
-  for char in s:
-    char_code = ord(char)
-    if char_code >= 65 and char_code <= 90:
-      encoded += chr(((char_code - 65 + k) % 26) + 65)
-    elif char_code >= 97 and char_code <= 122:
-      encoded += chr(((char_code - 97 + k) % 26) + 97)
-    else:
-      encoded += char
-  return encoded
-
-
-# print(caesarCipher('middle-Outz', 2))
-print(caesarCipher('Hello_World!', 4))
-
-print(ord('z'))
