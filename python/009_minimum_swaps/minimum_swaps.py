@@ -1,8 +1,6 @@
 def minimum_swaps(arr):
   def swap(left, right):
-    temp = arr[left]
-    arr[left] = arr[right]
-    arr[right] = temp
+    arr[left], arr[right] = arr[right], arr[left]
 
   swap_count = 0
   i = 0

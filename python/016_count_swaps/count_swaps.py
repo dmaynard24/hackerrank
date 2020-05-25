@@ -1,8 +1,6 @@
 def count_swaps(a):
   def swap(left, right):
-    temp = a[left]
-    a[left] = a[right]
-    a[right] = temp
+    a[left], a[right] = a[right], a[left]
 
   def bubblesort():
     count = 0
