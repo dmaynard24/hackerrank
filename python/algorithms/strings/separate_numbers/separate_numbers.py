@@ -1,4 +1,4 @@
-def separateNumbers(s):
+def separate_numbers(s):
   if s[0] == '0':
     return 'NO'
 
@@ -7,11 +7,12 @@ def separateNumbers(s):
       return nums[0]
 
     for length in range(min_length, len(s) - start + 1):
-      num = int(s[start:start + length])
-      nums.append(num)
-      if nums[-1] - nums[-2] == 1:
-        return get_first_num(start + length, length, nums)
-      nums.pop()
+      if s[start:start + 1] != '0':
+        num = int(s[start:start + length])
+        nums.append(num)
+        if nums[-1] - nums[-2] == 1:
+          return get_first_num(start + length, length, nums)
+        nums.pop()
 
     return -1
 
@@ -21,6 +22,3 @@ def separateNumbers(s):
       return 'YES ' + str(num)
 
   return 'NO'
-
-
-print(separateNumbers('1234'))
