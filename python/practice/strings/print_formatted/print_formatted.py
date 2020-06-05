@@ -10,4 +10,4 @@ def print_formatted(n):
     result.append(
         dec.rjust(mw - 1) + octa.rjust(mw) + hexa.rjust(mw) + bina.rjust(mw))
 
-  return result
+  return '\n'.join(result)
