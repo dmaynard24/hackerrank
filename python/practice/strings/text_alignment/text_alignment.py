@@ -27,4 +27,4 @@ def text_alignment(thickness):
         ((c * (thickness - i - 1)).rjust(thickness) + c +
          (c * (thickness - i - 1)).ljust(thickness)).rjust(thickness * 6))
 
-  return result
+  return '\n'.join(result)
