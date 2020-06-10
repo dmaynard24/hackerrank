@@ -7,7 +7,7 @@ def anagram(s):
     fh_chars[s[i]] = fh_chars.get(s[i], 0) + 1
     sh_chars[s[len(s) - (i + 1)]] = sh_chars.get(s[len(s) - (i + 1)], 0) + 1
   count = 0
-  for char in fh_chars.keys():
+  for char in fh_chars:
     if char in sh_chars:
       count += max(0, fh_chars[char] - sh_chars[char])
     else:

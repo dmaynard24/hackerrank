@@ -13,7 +13,7 @@ def happy_ladybugs(b):
     char_counts[b[i]] = char_counts.get(b[i], 0) + 1
 
   is_happy = True
-  for char in char_counts.keys():
+  for char in char_counts:
     if char != '_' and char_counts[char] < 2:
       is_happy = False
       break

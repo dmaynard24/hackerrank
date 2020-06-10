@@ -40,7 +40,7 @@ def alternate(s):
       else:
         return 0
     else:
-      for char in chars.keys():
+      for char in chars:
         new_str = st.replace(char, '')
         if len(new_str) >= max_len[0]:
           get_alternate_len(new_str)
