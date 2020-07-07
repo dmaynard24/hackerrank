@@ -18,7 +18,4 @@ def html_parser_1(html):
 
   parser = MyHTMLParser()
   parser.feed(html)
-
-
-# html_parser_1('''<html><head><title>HTML Parser - I</title></head>
-# <body data-modal-target class='1'><h1>HackerRank</h1><br /></body></html>''')
+  parser.close()
