@@ -24,7 +24,7 @@ class TestValidateCreditCard(unittest.TestCase):
         validate_credit_card.validate_credit_card('5133-3367-8912-3456'),
         False)
 
-  def test_validate_credit_card_4(self):
+  def test_validate_credit_card_5(self):
     self.assertEqual(
         validate_credit_card.validate_credit_card('5123 - 3567 - 8912 - 3456'),
         False)
