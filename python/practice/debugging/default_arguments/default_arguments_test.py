@@ -3,7 +3,7 @@ from unittest.mock import patch
 import unittest, default_arguments
 
 
-class TestTransposeFlatten(unittest.TestCase):
+class TestDefaultArguments(unittest.TestCase):
   def test_default_arguments(self):
     with patch('sys.stdout', new=StringIO()) as fake_out:
       default_arguments.default_arguments(['odd 2', 'even 3', 'odd 5'])
