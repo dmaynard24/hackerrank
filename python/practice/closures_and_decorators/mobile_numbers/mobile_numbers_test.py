@@ -1,7 +1,7 @@
 import unittest, mobile_numbers
 
 
-class TestFindMaxDepth(unittest.TestCase):
+class TestMobileNumbers(unittest.TestCase):
   def test_mobile_numbers(self):
     self.assertEqual(
         mobile_numbers.mobile_numbers(
