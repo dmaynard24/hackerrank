@@ -4,7 +4,7 @@ def is_valid_pile(pile):
   prev_val = None
 
   while l < r:
-    if pile[l] > pile[r] or pile[l] == pile[r]:
+    if pile[l] >= pile[r]:
       if prev_val and pile[l] > prev_val:
         return False
       prev_val = pile[l]
