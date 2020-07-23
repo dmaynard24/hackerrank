@@ -1,0 +1,22 @@
+import unittest, sherlock_and_string
+
+
+class TestSherlockAndString(unittest.TestCase):
+  def test_sherlock_and_string(self):
+    self.assertEqual(sherlock_and_string.is_valid('a'), 'YES')
+
+  def test_sherlock_and_string_1(self):
+    self.assertEqual(sherlock_and_string.is_valid('aabbcd'), 'NO')
+
+  def test_sherlock_and_string_2(self):
+    self.assertEqual(sherlock_and_string.is_valid('aabbccddeefghi'), 'NO')
+
+  def test_sherlock_and_string_3(self):
+    self.assertEqual(
+        sherlock_and_string.is_valid(
+            'ibfdgaeadiaefgbhbdghhhbgdfgeiccbiehhfcggchgghadhdhagfbahhddgghbdehidbibaeaagaeeigffcebfbaieggabcfbiiedcabfihchdfabifahcbhagccbdfifhghcadfiadeeaheeddddiecaicbgigccageicehfdhdgafaddhffadigfhhcaedcedecafeacbdacgfgfeeibgaiffdehigebhhehiaahfidibccdcdagifgaihacihadecgifihbebffebdfbchbgigeccahgihbcbcaggebaaafgfedbfgagfediddghdgbgehhhifhgcedechahidcbchebheihaadbbbiaiccededchdagfhccfdefigfibifabeiaccghcegfbcghaefifbachebaacbhbfgfddeceababbacgffbagidebeadfihaefefegbghgddbbgddeehgfbhafbccidebgehifafgbghafacgfdccgifdcbbbidfifhdaibgigebigaedeaaiadegfefbhacgddhchgcbgcaeaieiegiffchbgbebgbehbbfcebciiagacaiechdigbgbghefcahgbhfibhedaeeiffebdiabcifgccdefabccdghehfibfiifdaicfedagahhdcbhbicdgibgcedieihcichadgchgbdcdagaihebbabhibcihicadgadfcihdheefbhffiageddhgahaidfdhhdbgciiaciegchiiebfbcbhaeagccfhbfhaddagnfieihghfbaggiffbbfbecgaiiidccdceadbbdfgigibgcgchafccdchgifdeieicbaididhfcfdedbhaadedfageigfdehgcdaecaebebebfcieaecfagfdieaefdiedbcadchabhebgehiidfcgahcdhcdhgchhiiheffiifeegcfdgbdeffhgeghdfhbfbifgidcafbfcd'
+        ), 'YES')
+
+
+if __name__ == '__main__':
+  unittest.main()
