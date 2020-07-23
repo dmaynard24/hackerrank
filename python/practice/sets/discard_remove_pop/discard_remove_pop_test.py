@@ -1,7 +1,7 @@
 import unittest, discard_remove_pop
 
 
-class TestSymmetricDifference(unittest.TestCase):
+class TestDiscardRemovePop(unittest.TestCase):
   def test_discard_remove_pop(self):
     self.assertEqual(
         discard_remove_pop.discard_remove_pop([1, 2, 3, 4, 5, 6, 7, 8, 9], [
