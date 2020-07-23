@@ -1,5 +1,3 @@
-
-
 def minimum_bribes(q):
   total_bribe_count = 0
   for i in range(len(q) - 1, -1, -1):

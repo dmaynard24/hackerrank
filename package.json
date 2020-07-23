@@ -14,7 +14,7 @@
     "prettier": "^1.19.1"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --testPathPattern=/javascript/",
     "yapf": "yapf -ir --style=\"{indent_width: 2}\" files ."
   },
   "repository": {
