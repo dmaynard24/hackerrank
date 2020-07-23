@@ -1,3 +1,3 @@
-def is_subset(a, b):
-  a, b = set(a), set(b)
-  return len(a) == len(a.intersection(b))
+def is_subset(sup, sub):
+  sup, sub = set(sup), set(sub)
+  return len(sup) == len(sup.intersection(sub))
