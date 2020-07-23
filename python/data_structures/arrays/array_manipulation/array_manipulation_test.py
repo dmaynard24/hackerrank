@@ -6,9 +6,13 @@ class TestArrayManipulation(unittest.TestCase):
     self.assertEqual(
         array_manipulation.array_manipulation(
             5, [[1, 2, 100], [2, 5, 100], [3, 4, 100]]), 200)
+
+  def test_array_manipulation_1(self):
     self.assertEqual(
         array_manipulation.array_manipulation(
             10, [[1, 5, 3], [4, 8, 7], [6, 9, 1]]), 10)
+
+  def test_array_manipulation_2(self):
     self.assertEqual(
         array_manipulation.array_manipulation(
             4, [[2, 3, 603], [1, 1, 286], [4, 4, 882]]), 882)

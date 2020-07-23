@@ -7,6 +7,8 @@ class TestCheckMagazine(unittest.TestCase):
         check_magazine.check_magazine(
             ['give', 'me', 'one', 'grand', 'today', 'night'],
             ['give', 'one', 'grand', 'today']), 'Yes')
+
+  def test_check_magazine_1(self):
     self.assertEqual(
         check_magazine.check_magazine(
             ['two', 'times', 'three', 'is', 'not', 'four'],

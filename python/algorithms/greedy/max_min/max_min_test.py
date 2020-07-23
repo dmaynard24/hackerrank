@@ -6,11 +6,11 @@ class TestMaxMin(unittest.TestCase):
     self.assertEqual(max_min.max_min(3, [10, 100, 300, 200, 1_000, 20, 30]),
                      20)
 
-  def test_max_min(self):
+  def test_max_min_1(self):
     self.assertEqual(
         max_min.max_min(4, [1, 2, 3, 4, 10, 20, 30, 40, 100, 200]), 3)
 
-  def test_max_min(self):
+  def test_max_min_2(self):
     self.assertEqual(max_min.max_min(2, [1, 2, 1, 2, 1]), 0)
 
 
