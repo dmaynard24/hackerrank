@@ -2,7 +2,7 @@ import re
 
 
 def detect_html_attrs(html):
-  opening_tags = re.findall(r'(<\w+(?: [\s\S][^>]+)?>)', html)
+  opening_tags = re.findall(r'(<\w+(?: [\s\S]+?)?>)', html)
 
   tags = []
   for ot in opening_tags:
