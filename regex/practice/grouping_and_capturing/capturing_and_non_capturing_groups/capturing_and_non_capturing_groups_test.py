@@ -2,7 +2,7 @@ import unittest, capturing_and_non_capturing_groups
 
 
 class TestCapturingAndNonCapturingGroups(unittest.TestCase):
-  def capturing_and_non_capturing_groups(self):
+  def test_capturing_and_non_capturing_groups(self):
     self.assertEqual(
         capturing_and_non_capturing_groups.capturing_and_non_capturing_groups(
             'okokok! cya'), 'true')

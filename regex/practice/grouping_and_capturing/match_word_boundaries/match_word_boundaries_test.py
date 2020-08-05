@@ -2,7 +2,7 @@ import unittest, match_word_boundaries
 
 
 class TestMatchWordBoundaries(unittest.TestCase):
-  def match_word_boundaries(self):
+  def test_match_word_boundaries(self):
     self.assertEqual(
         match_word_boundaries.match_word_boundaries('Found any match?'),
         'true')

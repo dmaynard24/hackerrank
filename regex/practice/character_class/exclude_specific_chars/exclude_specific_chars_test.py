@@ -2,7 +2,7 @@ import unittest, exclude_specific_chars
 
 
 class TestExcludeSpecificChars(unittest.TestCase):
-  def exclude_specific_chars(self):
+  def test_exclude_specific_chars(self):
     self.assertEqual(exclude_specific_chars.exclude_specific_chars('think?'),
                      'true')
 
