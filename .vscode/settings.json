@@ -11,7 +11,7 @@
   "python.linting.enabled": true,
   "python.formatting.provider": "yapf",
   "python.formatting.yapfArgs": ["--style", "{indent_width: 2}"],
-  "vscode_custom_css.imports": ["file:///c:/repos/side/hackerrank/css/synthwave-x-fluoromachine-0.0.12.css", "file:///c:/repos/side/hackerrank/css/theme-overrides.css"],
+  "vscode_custom_css.imports": ["file:///Users/dmayna/repos/side/hackerrank/css/synthwave-x-fluoromachine-0.0.12.css", "file:///Users/dmayna/repos/side/hackerrank/css/theme-overrides.css"],
   "workbench.colorCustomizations": {
     "scrollbarSlider.background": "#9963ff16",
     "scrollbarSlider.hoverBackground": "#9963ff16",
